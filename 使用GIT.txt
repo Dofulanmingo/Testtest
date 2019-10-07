@@ -1,0 +1,29 @@
+将本地项目代码上传到Github服务器之Git工具使用
+https://blog.csdn.net/weixin_36626671/article/details/81002619
+
+1.进入Github首页，点击New repository新建一个项目
+
+填写相应信息后点击create即可 Repository name: 仓库名称
+Description(可选): 仓库描述信息介绍
+Public, Private : 仓库权限（公开共享，私有或指定合作者）
+Initialize this repository with a README: 添加一个README.md
+gitignore: 不需要进行版本管理的仓库类型，对应生成文件.gitignorelicense: 证书类型，对应生成文件LICENSE
+
+2.建好之后打开自己的Github进入Repository就会看到如图所示新建的Test仓库，复制地址https://github.com/Scarlet-Liu/Test.git 备用，
+这个仓库是用来上传安放文件的位置。
+
+
+3.接下来就到本地操作了，首先找到一个路径（文件夹），执行右键Git Bash Here
+首先右键你的项目，如果你之前安装git成功的话，右键会出现两个新选项，分别为Git Gui Here,Git Bash Here,
+这里我们选择Git Bash Here，
+
+4.接下来输入如下代码（关键步骤），把github上面的仓库克隆到本地，git clone (仓库网址）+（.git），例如https://github.com/Dofulanmingo/Ueditor.git
+之后就会出现一个新建的仓库名的文件夹(Ueditor文件夹)，然后
+把你要上传的文件拷贝到这个仓库名文件夹(Ueditor文件夹)中。
+
+5.接着继续输入命令 cd Ueditor，进入Ueditor文件夹,执行接下来操作
+
+6.接下来依次输入以下代码即可完成其他剩余操作：
+git add . （注：别忘记后面的.，此操作是把Test文件夹下面的文件都添加进来）
+git commit -m  "提交信息" （注：“提交信息”里面换成你需要，如“first commit”）
+git push -u origin master   （注：此操作目的是把本地仓库push到github上面，可能此步骤需要你输入帐号和密码）
